@@ -29,10 +29,10 @@ header{
 header h1{
   font-family:DKNew, sans-serif;
   color: brown;
-  font-size: 80px;
+  font-size: 60px;
   font-style: initial;
   margin: 50px;
-  margin-top: 60px;
+  margin-top: 50px;
   
 }
 
@@ -46,31 +46,21 @@ main{
   grid-area: main;
   text-align: center;
   padding: 50px;
-  padding-top: 60px;
-  background-image: url(https://2.bp.blogspot.com/-0-EF2mthjZo/VDfZxhClNdI/AAAAAAAAn9s/gv5Ves6d_u0/s800/banner14.png) ;
-  background-clip: content-box ;
-  background-repeat: no-repeat;
-  background-position-y: 30px;
-
-}
-
-main h2{
-  font-family: Kidos, san-serif;
-  font-size: 55px;
-  color: rgb(162, 82, 73);
-  margin-top: 80px;
-  background-color: rgb(250, 240, 230);
+  padding-top: 130px;
 }
 
 main p{
   font-family: Stanberry, sans-serif;
   opacity: 100%;
+  line-height: 10px;
+  padding-right: 60px;
 }
 
 sidebar{
   grid-area: sidebar;
   text-align: center;
   margin-top: 40px;
+  padding: 50px;
 }
 
 footer{
@@ -122,5 +112,4 @@ ul li img:hover{
   opacity: 0;
 /* to make the icons disappear */
 }
-
  
