@@ -121,7 +121,7 @@ ul li img:hover{
 
 .go-top{
   position: fixed;
-  bottom:70px;	
+  bottom:50px;	
   right: 20px;		
 }
 
@@ -143,8 +143,8 @@ ul li img:hover{
 
 .ins {
   position: fixed;
-  bottom: 72px;	
-  right: 75px;	
+  bottom: 52px;	
+  right: 72px;
 }
 
 .ins a {
@@ -162,7 +162,7 @@ ul li img:hover{
 .github {
   position: fixed;
   right: 115px;	
-  bottom: 72px;	
+  bottom: 52px;	
 }
 
 .github a {
