@@ -23,6 +23,7 @@ header{
   text-align: center;
   background-color: rgb(250, 240, 230);
   line-height: 10px;
+  margin-bottom: 0;
 
 }
 
@@ -31,36 +32,41 @@ header h1{
   color: brown;
   font-size: 60px;
   font-style: initial;
-  margin: 50px;
   margin-top: 50px;
   
 }
 
 header p{
   font-family: Stanberry, sans-serif;
-  color:rgb(31, 30, 30)
+  color:rgb(125, 123, 123);
+  margin-bottom: 25px;
 
 }
 
 main{
   grid-area: main;
   text-align: center;
-  padding: 50px;
-  padding-top: 130px;
+  padding-left:10px;
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 90px;
+  background-color: rgb(255, 255, 255);
+  background-clip: content-box;
 }
 
 main p{
+  margin-left: 40px;
   font-family: Stanberry, sans-serif;
+  text-align: justify;
   opacity: 100%;
-  line-height: 10px;
+  line-height: 20px;
   padding-right: 60px;
 }
 
 sidebar{
   grid-area: sidebar;
   text-align: center;
-  margin-top: 40px;
-  padding: 50px;
+  padding: 70px;
 }
 
 footer{
@@ -112,4 +118,62 @@ ul li img:hover{
   opacity: 0;
 /* to make the icons disappear */
 }
- 
+
+.go-top{
+  position: fixed;
+  bottom:70px;	
+  right: 20px;		
+}
+
+.go-top a {
+  display: block;	
+  font-family: Stanberry, sans-serif;
+  font-size: small;
+  text-align: center;
+  text-decoration: none;		
+  color: rgb(255, 255, 255);			
+  background-image: url(https://3.bp.blogspot.com/-x-e-VLrvzZ0/WQvvRqpNvVI/AAAAAAABEGI/I-yUkeN4pfIYXuAX3985tPdItmI4KvbJQCLcB/s180-c/sushi_makisu.png);	
+  background-size: contain;	
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;		
+  padding: 10px 10px;			
+  border-radius:5px;				
+}
+
+.ins {
+  position: fixed;
+  bottom: 72px;	
+  right: 75px;	
+}
+
+.ins a {
+  display: block;	
+  block-size: 15px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg);	
+  background-size: cover;	
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;		
+  padding: 10px 18px;			
+  border-radius:10px;				
+}
+
+.github {
+  position: fixed;
+  right: 115px;	
+  bottom: 72px;	
+}
+
+.github a {
+  display: block;	
+  block-size: 15px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg);	
+  background-size: cover;	
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;		
+  padding: 10px 18px;			
+  border-radius:10px;				
+}
+
