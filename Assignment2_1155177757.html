@@ -5,14 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mariana's Sushi-"Code"-Round</title>
+
   <link rel="stylesheet" href="Assignment1_1155177757.css">
+  
   <style>
+    b{
+      color: sienna;
+    }
     body{
       display: grid;
       margin-left: 10px;
       margin-right: 10px;
-      grid-template-columns: auto 45%;
-      grid-template-rows: auto 75% 40%;
+      grid-template-columns: auto 40%;
+      grid-template-rows: auto auto 17%;
       grid-template-areas: "header header"
                           "main sidebar"
                            "footer footer";
@@ -45,16 +50,51 @@
   <main>
     <p id="monday">
       <img src="https://1.bp.blogspot.com/-a0AMrvLUJmM/U9zsXbwKokI/AAAAAAAAkck/UPrQbQ1R50E/s1600/number_2.png" width="25px">
-      Assignment #2
+      Assignment #2: Restaurants in Tsuen Wan
     <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+      For Assignment#2, we are collecting information about restaurants in Hong Kong on OpenRice and making related analysis using ParseHub, OpenRefine, SQLite and Pandas Data Frame. The area that I selected was <b>Tsuen Wan</b>.
+      <br><br>
+      To read my assignment journal, please click <a href="https://hkdesign.org/bta2-openrice-tsuen-wan-applying-likes-rate-to-restaurant-selection/">here</a>
+      <br><br>
+      ( 1 ) To have an overview of the type and price of all the restaurants in Tsuen Wan, <b>Japanese food takes the dominate position</b>, with 19 Japanese restaurants out of all the 78 restaurants.
+      <br><br>
+      In terms of the price range, this area makes a good choice for students, because <b>most of its restaurants fall in the price range of 51-100HKD/person and 101-200HKD/person</b>.<br><br> 
+      <img src="types.png" height="200px"><img src="price.png" height="200px">
+      <br><br><br>
+      
+      ( 2 ) Now let's move on to see people's evaluation on these restaurants. <br><br> Normally, when trying to compare different restaurants, I will rank them by their rating. But since OpenRice doesn't apply a very precise rating system (its system uses 0.5🌟/level instead of 0.1🌟/level), I decided to go with "like" and made the following <b>Top 10 ranking for most likes(left) / dislikes(right)</b>.
+      <br><br>
+      <img src="likes.png" height="148px"><img src="dislikes.png" height="150px">
+      <br><br>
+      However, we may locate restaurants such as "初見Shoken" and "Olive Cafe" that appear on both "Most Likes" and "Most Dislikes". In this case, it becomes hard for us to identify whether it's a wise choice or not to eat there. 
+      <br><br>
+      To deal with such dilemma, I tried to introduce a new criteria of <b>"Likes Rate", which stands for "number of likes/total number of likes and dislikes". </b> High "Likes Rate" indicates that a restaurant has a good and relatively stable performance.
+      <br> <br>
+      <img src="likesrate.png" width="700px">
+      <br> <br>
+      With "Likes Rate" taken into consideration, if I want a restaurant (1) reviewed by many users; (2) with high "Likes Rate", I may choose from "蝦蝦燒Cooking Haha" "18樓雞煲火鍋專門店" and "鳥山名Toriyamana". Since I prefer Japanese food personally, <b>"鳥山名Toriyamana" will probably be my final choice</b>.
+      <br><br>
+      p.s. I also did a ranking exclusively for all Japanese Food in Tsuen Wan applying the same method. According to the result, <b>"鳥山名Toriyamana""友拉麵""牛極 (大河道) Gyuugoku Stone Grill Steak (Tai Ho Road)""Ikigai Concepts" and "初見Shoken"</b> will be the five choices that I recommend with relatively good performance in popularity and like rate.
     </p>
     </p>
     <br> 
   </main>
-
   <sidebar>
-    <img class="mainpic" src="https://2.bp.blogspot.com/-WKhyux3zjI8/XASwaSwkEGI/AAAAAAABQZ4/5csR5XWpXNoxbA-cvkPm-SdeSeab1lkNACLcBGAs/s400/computer_programming_woman.png" height="450px">
+    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fn.sinaimg.cn%2Fsinacn%2Fw2048h932%2F20180119%2F74fe-fyqtwzu5584623.jpg&refer=http%3A%2F%2Fn.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1668418492&t=b8f13f37c2336b685507dbee5d1b1066" width="520px">
+    <img class="mainpic" src="openrice.png" height="400px">
+    <p>
+      OpenRice - Tsuen Wan
+    <br>
+  </p>
+    <img src="https://static7.orstatic.com/userphoto2/photo/X/QUP/05AYA64202095F5C906CE3px.jpg" width="515px">
+    <img src="https://static7.orstatic.com/userphoto2/photo/1X/1IQM/0AT9AQ547004AF2C12920Fpx.jpg" width="255px">
+    <img src="https://static5.orstatic.com/userphoto2/photo/1X/1IQM/0AT9AW9EF80D326D95CA36px.jpg" width="255px">
+    <p>
+      鳥山名Toriyamana - My final choice
+      <br>
+      (pics from reviews on OpenRice)
+    <br>
+  </p>
   </sidebar>
   
   <footer>

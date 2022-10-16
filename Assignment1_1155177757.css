@@ -69,6 +69,10 @@ sidebar{
   padding-bottom: 90px;
 }
 
+sidebar p{
+  font-family: Stanberry, sans-serif;
+}
+
 footer{
   grid-area: footer;
   margin-top: -50px;
